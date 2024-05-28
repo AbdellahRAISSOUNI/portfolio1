@@ -275,6 +275,8 @@ section {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    gap: 20px;
+    justify-content: space-around;
 }
 
 .about-details-container {
@@ -284,6 +286,7 @@ section {
 
 .about-containers, .about-details-container {
     display: flex;
+    
 }
 
 .about-pic {
@@ -430,4 +433,31 @@ footer{
 
 footer p{
     text-align: center;
+}
+
+
+
+
+
+.details-container {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    will-change: transform, box-shadow, background-color;
+}
+
+/* Hover effects */
+.details-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.2); /* Slightly less transparent on hover */
+}
+
+/* Gradient hover effect (optional) */
+.interactive-element.gradient-hover:hover {
+    background: linear-gradient(135deg, #a8edea, #fed6e3); /* Adjust to your preferred colors */
 }
